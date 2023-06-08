@@ -1,0 +1,61 @@
+/* MAIN */
+h1 {
+    margin-block-end: 1em;
+}
+
+h3, p {
+    text-align: start;
+}
+
+p  a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+}
+
+.container {
+    width: calc(100% - 10em);
+}
+
+.container-about > div {
+    margin-block: 2em;
+}
+
+.container-about > div> p {
+    margin-block: 0.5em;
+}
+
+/* TABLET >= 600px - FONT SIZE h1,h2,h3,p, a*/
+@media (min-width: 37.5em) {
+    .container {
+        width: calc(100% - 15em);
+    }
+
+    .container-about > div {
+        margin-block: 2.5em;
+    }
+    
+    .container-about > div> p {
+        margin-block: 1em;
+    }
+}
+
+/* DESKTOP >= 1000px - FONT SIZE h1,h2,h3,p, a*/
+@media (min-width: 62.5rem) {
+   .container {
+        width: calc(100% - 20em);
+    }
+
+
+    .container-about > div {
+        margin-block: 3.5em;
+    }
+    
+    .container-about > div> p {
+        margin-block: 1em;
+    }
+
+    p {
+        text-align: justify;
+    }
+}

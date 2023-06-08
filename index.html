@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Andrea Zappa</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo/Logo-16x16.svg">
+    <link rel="stylesheet" href="./assets/style/home.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <!-- nome a sx - menu dx (projects, contatc, blog, social) -->
+            <div id="container-icon" class="container-icon">
+                <!-- SOCIAL ICONS -->
+                <div class="social-menu">
+                    <a href="https://github.com/andrezappa" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                    <a href="https://www.linkedin.com/in/andrea-zappa-b823751b2/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+                    <a href="https://www.instagram.com/andre_zappa/" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+                </div>
+            </div> 
+            <!-- MENU -->
+            <nav class="container-menu">
+                <ul class="menu">
+                    <li class="menu-element first-element"><a href="./index.html" class="active">Home</a></li>
+                    <li class="menu-element"><a href="#projects">Projects</a></li>
+                    <li class="menu-element"><a href="./assets/pages/blog/index.html">Blog</a></li>
+                    <li class="menu-element"><a href="./assets/pages/about/index.html">About Me</a></li>
+                </ul>
+            </nav>
+           
+        </div>
+        <!-- MOBILE MENU -->
+        <div class="container-mobile-menu">
+            <span id="menu-icon" style="cursor: pointer" onclick="openNav()">&#9776;</span>
+            <nav class="container-mobile-nav" id="container-mobile-nav">
+                <ul class="mobile-menu">
+                    <a class="closebtn" onclick="closeNav()">&#x2716;</a>
+                    <li><a href="./index.html" class="active">Home</a></li>
+                    <li><a href="#projects" onclick="closeNav()">Projects</a></li>
+                    <li><a href="./assets/pages/blog/index.html" onclick="closeNav()">Blog</a></li>
+                    <li><a href="./assets/pages/about/index.html"  onclick="closeNav()">About Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+     
+    
+    <!-- MAIN CONTENT -->
+    <main class="main">
+        <!-- HERO IMAGE AND TEXT -->
+        <section class="hero">
+            <!-- HERO CONTAINER -->
+            <div class="container hero-container">
+                <!-- HERO IMAGE -->
+                <picture class="hero-image">
+                    <img 
+                    src="./assets/img/hero-image.jpg" 
+                    alt="Image of Andrea Zappa" 
+                    />
+                </picture>
+
+                <!-- HERO TEXT -->
+                <div class="hero-text">
+                    <h1 class="hero-headline">Nice to meet you! <br> I'm <span class="underline">Andrea Zappa</span>.</h1>
+                    <p class="hero-description">I live in Siena, I'm studying web development at <span>Start2Impact University</span>.</p>
+                    <a href="#contact" class="contact-link underline">Contact Me</a>
+                </div>
+                <hr>
+            </div>
+        </section>
+        <!-- SKILLS -->
+       <section class="skills">
+            <div class="container">
+                <!-- <h2>Skills</h2> -->
+                <div class="container-skills">
+                    <div class="skills-item">
+                        <h3 class="skills-title">HTML</h3>
+                        <p class="skills-description">Studying...</p>
+                    </div>
+                    <div class="skills-item">
+                        <h3 class="skills-title">CSS</h3>
+                        <p class="skills-description">Studying...</p>
+                    </div>
+                    <div class="skills-item">
+                        <h3 class="skills-title">JavaScript</h3>
+                        <p class="skills-description">Studying...</p>
+                    </div>
+                    <div class="skills-item">
+                        <h3 class="skills-title">PHP</h3>
+                        <p class="skills-description">Studying...</p>
+                    </div>
+                    <div class="skills-item">
+                        <h3 class="skills-title">REACT</h3>
+                        <p class="skills-description">Studying...</p>
+                    </div>
+                    <div class="skills-item">
+                        <h3 class="skills-title">Worpress</h3>
+                        <p class="skills-description">1 Year Experience</p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+       </section>
+       <!-- PROJECTS -->
+       <section class="projects" id="projects">
+            <div class="container">
+                <div class="container-headline">
+                    <h2 class="projects-headline">Projects</h2>
+                    <a href="#contact" class="contact-link underline">Contact Me</a>
+                </div>
+
+                <div class="container-projects">
+
+                    <div class="project-item">
+                        <picture class="project-picture">
+                            <source
+                                media="(min-width: 62.5em)"
+                                srcset="./assets/img/project-images/start2impact-project-large.png"
+                            >
+                            <img
+                                class="projects-image"
+                                src="./assets/img/project-images/start2impact-project-large.png"
+                                alt="screenshot of design portfolio website"
+                            >
+                            <div class="container-project-link-desktop">
+                                <a href="https://www.start2impact.it/" target="_blank" class="project-link underline">View Project</a>
+                            </div>
+                        </picture>
+                        <h3 class="project-title">Start2Impact</h3>
+                        <p class="project-tag">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                        </p>
+                        <div class="container-project-link">
+                            <a href="https://www.start2impact.it/" target="_blank" class="project-link underline">View Project</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-item">
+                        <picture class="project-picture">
+                            <source
+                                media="(min-width: 62.5em)"
+                                srcset="./assets/img/project-images/zappahouses-project-large.png"
+                            >
+                            <img
+                                class="projects-image"
+                                src="./assets/img/project-images/zappahouses-project-small.png"
+                                alt="screenshot of design portfolio website"
+                            >
+                            <div class="container-project-link-desktop">
+                                <a href="./assets/projects/zappahouses/index.html" class="project-link underline">View Project</a>
+                                <a href="https://www.zappahouses.it" target = "_blank" class="project-link underline">View Site</a>
+                            </div>
+                        </picture>
+                        <h3 class="project-title">Zappa Houses</h3>
+                        <p class="project-tag">
+                            <span>Wordpress</span>
+                            <span>HTML</span>
+                        </p>
+                        <div class="container-project-link">
+                            <a href="./assets/projects/zappahouses/index.html" class="project-link underline">View Project</a>
+                            <a href="https://www.zappahouses.it" target = "_blank" class="project-link underline">View Site</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+       </section>
+
+       <section class="contact" id="contact">
+        <div class="container">
+            <div class="container-contact">
+                <h1 id="contact-header">Contact</h1>
+                <p class="contact-text">I would love to hear about your project and how I could help. Please fill in the form, and I'll get back to you as soon as possible.</p>
+                <form action="https://formspree.io/f/mqkovwqv" method="POST">
+                    <div class="container-form">
+                        <label for="name" class="visually-hidden">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Name" required>
+                        <img src="./assets/img/icon-invalid.svg" alt="" class="contact-invalid-icon" width="24" height="24"/>
+                    </div>
+                    <div class="container-form">
+                        <label for="email" class="visually-hidden">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                        <img src="./assets/img/icon-invalid.svg" alt="" class="contact-invalid-icon" width="24" height="24"/>
+                    </div>
+                    <div class="container-form">
+                        <label for="message" class="visually-hidden">Message</label>
+                        <textarea type="text" name="message" id="message" placeholder="Message" required></textarea>
+                        <img src="./assets/img/icon-invalid.svg" alt="" class="contact-invalid-icon" width="24" height="24"/>
+                    </div>
+                    <!-- your other form fields go here -->
+                    <div class="message-button">
+                        <button type="submit" class="hover underline">Send Message</button>
+                    </div>
+                </form>
+                <hr>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <footer>
+        <section class="footer">
+            <div class="container">
+                <div class="container-footer">
+                    <!-- nome a sx - menu dx (projects, contatc, blog, social) -->
+                    <div class="container-icon">
+                        <!-- SOCIAL ICONS -->
+                        <div class="social-menu">
+                            <a href="https://github.com/andrezappa" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                            <a href="https://www.linkedin.com/in/andrea-zappa-b823751b2/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+                            <a href="https://www.instagram.com/andre_zappa/" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+                        </div>
+                    </div> 
+                    <p class="hover">© 2023 Andrea Zappa. All Rights Reserved</p>
+                </div>
+            </div>
+       </section>
+    </footer>
+
+    <!-- SCRIPT js MOBILE MENU -->
+    <script src="./assets/script/script.js"></script>
+
+</body>
+</html>

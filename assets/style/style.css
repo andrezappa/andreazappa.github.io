@@ -1,0 +1,430 @@
+:root {
+    --bg-body: hsl(0, 0%, 8%);
+    --bg-body2: hsl(0, 0%, 14%);
+    --accent: hsl(153, 71%, 59%);
+    --text1: hsl(0, 0%, 100%);
+    --text2: hsl(0, 0%, 85%);
+    --invalid: hsl(7, 100%, 68%);
+    --fs-18: 1.125rem;
+    --fs-20: 1.25rem;
+    --fs-24: 1.5rem;
+    --fs-30: 1.875rem;
+    --fs-32: 2rem;
+    --fs-36: 2.25rem;
+    --fs-40: 2.5rem;
+    --fs-44: 2.75rem;
+    --fs-48: 3rem;
+    --fs-72: 4.5rem;
+    --container: 69.375rem;
+    --transition: 150ms ease-in-out;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* GENERAL SETTINGS - MOBILE */
+body {
+    background-color: var(--bg-body);
+    color: var(--text1);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: var(--fs-18);
+    line-height: 1.56;
+}
+
+h1, h2 {
+    font-size: var(--fs-24);
+    text-align: center;
+}
+
+h3 {
+    font-size: var(--fs-20);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+}
+
+p {
+    color: var(--text2);
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text1);
+}
+
+hr {
+    width: 100%;
+    border: none;
+    height: 1px;
+    background-color: var(--text2);
+    margin-block: 2.5em;
+}
+
+.container {
+    width: calc(100% - 3.5rem);
+    margin: 0 auto;
+}
+
+/* TABLET >= 600px - FONT SIZE h1,h2,h3,p, a*/
+@media (min-width: 37.5em) {
+    h1, h2 {
+        font-size: var(--fs-36);
+    }
+    
+    h3 {
+        font-size: var(--fs-32);
+    }
+    
+    p, a, p > span, button {
+        color: var(--text2);
+        font-size: var(--fs-24);
+    }
+
+    hr {
+        margin-block: 3em;
+        height: 1.5px;
+    }
+
+    .container {
+        width: calc(100% - 4.5em);
+    }
+}
+
+/* DESKTOP >= 1000px - FONT SIZE h1,h2,h3,p, a*/
+@media (min-width: 62.5rem) {
+    h1, h2 {
+        font-size: var(--fs-48);
+    }
+    
+    h3 {
+        font-size: var(--fs-40);
+    }
+    
+    h1,
+    h2,
+    h3 {
+      line-height: 1.5;
+    }
+    
+    p, a, p > span, button {
+        font-size: var(--fs-36);
+    }
+
+    hr {
+        margin-block: 3em;
+        height: 2px;
+    }
+
+    .container {
+        width: calc(100% - 5.5em);
+    }
+}
+
+/* GENERAL SETTINGS VALID ON ALL DEVICES */
+.active {
+    color: var(--accent);
+}
+
+.underline {
+    text-decoration: underline;
+    text-underline-offset: 0.4em;
+    text-decoration-color: var(--accent);
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* HOVERING OVER (DESKTOP DEVICES) */
+a:hover, i:hover, .hover:hover {
+    color: var(--accent);
+    transition: var(--transition);
+}
+
+/* ----------------------------------------------------------- */
+
+/* HEADER - MOBILE*/
+.header {
+    padding-block-start: 1em;
+}
+
+/* POSITIONING NAVBAR ELEMENTS*/
+.container-icon {
+    display: flex;
+    justify-content: center;
+}
+
+/* DESIGN SOCIAL ICONS */
+.social-menu > a {
+    margin-inline-end: 0.5em;
+}
+
+.social-menu > a:last-child {
+    margin-inline-end: 0;
+}
+
+/* TABLET & DESKTOP ICON*/
+@media (min-width: 37.5em) {
+    .header {
+        margin-block-start: 1.5em;
+    }
+
+    .social-menu > a {
+        margin-inline-end: 0.75em;
+    }
+}
+
+@media (min-width: 62.5em) {
+    .header {
+        margin-block-start: 2em;
+    }
+
+    .social-menu > a {
+        margin-inline-end: 1em;
+    }
+}
+
+/* MOBILE MENU */
+.container-mobile-menu {
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#menu-icon {
+    padding-inline-end: 2.5em;
+}
+
+.container-mobile-nav {
+    display: none;
+    background-color: var(--bg-body2);
+    width: 100%;
+}
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-inline: 2.5em;
+    padding-block-start: 1.5em;
+    height: 100vh;
+    position: relative;
+}
+
+.mobile-menu  li{
+    margin-block: 0.2em;
+    list-style: none;
+    display: inline-block;
+}
+
+.closebtn {
+    position: absolute;
+    top: 1.5em;
+    right: 2.5em;
+    cursor: pointer;
+}
+
+/* NAVBAR MENU ELEMNTS */
+.container-menu {
+    display: none;
+    justify-content: center;
+}
+
+.menu li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 2em;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu-element > a {
+    position: relative;
+}
+
+.menu-element:not(.first-element) > a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -0.4em;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent);
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.menu-element > a:hover::after {
+    width: 100%;
+}
+
+/* TABLET & DESKTOP MENU*/
+@media (min-width: 37.5em) {
+    .container-menu {
+        display: flex;
+        margin-block: 1.5em;
+    }
+
+    .container-mobile-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 62.5em) {
+    .container-menu {
+        margin-block: 2em;
+    }
+
+    .menu li{
+        list-style: none;
+        display: inline-block;
+        margin-right: 2.5em;
+    }
+
+    .container-mobile-menu {
+        display: none;
+    }
+}
+
+/* ---------------------------------------------- */
+/* CONTACT */
+.contact, .footer{
+    background-color: var(--bg-body2);
+}
+
+.contact {
+    margin-block-start: 2em;
+}
+
+.container-contact {
+    text-align: center;
+    margin-inline: 2.5em;
+    padding-block-start: 2em;
+}
+
+.contact-text { 
+    margin-block-start: 1em;
+}
+
+.contact-form {
+    margin-block-start: 2em;
+}
+
+.container-form {
+    position: relative;
+    margin-block-end: 16px;
+}
+
+.container-form input, .container-form textarea {
+    width: 100%;
+    padding-block: 16px;
+    padding-inline: 24px; 
+    border: none;
+    border-bottom: 1px solid var(--text1);
+    background: transparent;
+    line-height: 1.625;
+    color: var(--text1);
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.container-form textarea {
+    margin-block-end: 32px;
+    resize: none;
+}
+
+.container-form > *::placeholder {
+    color: var(--text1);
+    opacity: 0.5;
+    text-transform: uppercase;
+}
+
+.message-button {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    
+}
+
+.message-button button {
+    background-color: transparent;
+    border: none;
+    color: var(--text1);
+    text-transform: uppercase;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+
+.contact-invalid-icon {
+    display: none;
+    width: var(--fs-24);
+    height: var(--fs-24);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    translate: -50% -50%;
+}
+
+.contact input:focus-visible:invalid ~ .contact-invalid-icon,
+.contact textarea:focus-visible:invalid ~ .contact-invalid-icon {
+  display: inline-block;
+}
+
+.container-contact hr {
+    margin-block-end: 0;
+}
+
+/* TABLET 600px*/
+@media (min-width: 37.5em) {
+    .contact {
+        margin-block-start: 3em;
+    }
+
+    input::placeholder, textarea::placeholder {
+        font-size: var(--fs-20);
+    }
+}
+
+/* DESKTOP 1000px*/
+@media (min-width: 62.5em) {
+    .contact {
+        margin-block-start: 4em;
+    }
+
+    input, textarea {
+        height: 8em;
+    }
+}
+
+/* ----------------------------------------------- */
+
+/* FOOTER MOBILE*/
+.container-footer {
+    padding-block: 2.5em;
+}
+
+.container-footer p {
+    font-size: 0.5em;
+    text-align: center;
+    margin-block-start: 2.5em;
+}
+
+/* TABLET & DESKTOP */
+@media (min-width: 37.5em) {
+    .container-footer p {
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Andrea Zappa</title>
+    <link rel="icon" type="image/x-icon" href="../../img/logo/Logo-16x16.svg">
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/home.css">
+    <link rel="stylesheet" href="../../style/zappahouses.project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <!-- nome a sx - menu dx (projects, contatc, blog, social) -->
+            <div id="container-icon" class="container-icon">
+                <!-- SOCIAL ICONS -->
+                <div class="social-menu">
+                    <a href="https://github.com/andrezappa" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                    <a href="https://www.linkedin.com/in/andrea-zappa-b823751b2/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+                    <a href="https://www.instagram.com/andre_zappa/" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+                </div>
+            </div> 
+            <!-- MENU -->
+            <nav class="container-menu">
+                <ul class="menu">
+                    <li class="menu-element first-element"><a href="../../../index.html" class="active">Home</a></li>
+                    <li class="menu-element"><a href="../../../index.html#projects">Projects</a></li>
+                    <li class="menu-element"><a href="../../pages/blog/index.html">Blog</a></li>
+                    <li class="menu-element"><a href="../../pages/about/index.html">About Me</a></li>
+                </ul>
+            </nav>
+           
+        </div>
+        <!-- MOBILE MENU -->
+        <div class="container-mobile-menu">
+            <span id="menu-icon" style="cursor: pointer" onclick="openNav()">&#9776;</span>
+            <nav class="container-mobile-nav" id="container-mobile-nav">
+                <ul class="mobile-menu">
+                    <a class="closebtn" onclick="closeNav()">&#x2716;</a>
+                    <li><a href="../../../index.html" class="active">Home</a></li>
+                    <li><a href="../../../index.html#projects" onclick="closeNav()">Projects</a></li>
+                    <li><a href="../../pages/blog/index.html" onclick="closeNav()">Blog</a></li>
+                    <li><a href="../../pages/about/index.html"  onclick="closeNav()">About Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+     
+    
+    <!-- MAIN CONTENT -->
+    <main class="main">
+        <section>
+            <div class="container continer-zappahouses">
+                <h1 class="project-title">Zappa Houses Project</h1>
+                <div class="project-item">
+                    <picture class="project-picture">
+                        <source
+                            media="(min-width: 62.5em)"
+                            srcset="../../img/project-images/zappahouses-project-large.png"
+                        >
+                        <img
+                            class="projects-image"
+                            src="../../img/project-images/zappahouses-project-small.png"
+                            alt="screenshot of design portfolio website"
+                        >
+                    </picture>
+                </div>
+                <p class="underline">Welcome to my project!</p>
+                <p>
+                    As a web developer, I embarked on this initiative to create a website for my two apartments dedicated to short-term rentals. This project has been a result of my personal drive to explore new technologies in web development while simultaneously addressing a practical need in my own business. Managing two apartments for short-term rentals, I engage with various platforms such as Airbnb and Booking on a daily basis. However, these platforms often come with high management fees. To overcome these costs and provide a more cost-effective solution for our clients, I came up with the idea of building my own personal website.
+                </p>
+                <p>
+                    The website was built entirely using the WordPress CMS. At the time, I had limited knowledge in web development and wanted to deliver the project quickly. While I customized the code slightly by writing some HTML and CSS, I have plans to rebuild the site from scratch, both on the front-end and back-end. This approach will enable me to enhance my skills as a web developer and have complete control over the site's structure.
+                    By undertaking this project, I aim to improve my proficiency in web development and offer a more personalized and streamlined experience for our guests. I am excited to further refine the website's functionalities and design, leveraging my expertise as a web developer to create an exceptional online platform.
+                    <p class="underline">Thank you for exploring my project!</p>
+                </p>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="container-contact">
+                    <h1 id="contact-header">Contact</h1>
+                    <p class="contact-text">I would love to hear about your project and how I could help. Please fill in the form, and I'll get back to you as soon as possible.</p>
+                    <form action="https://formspree.io/f/mqkovwqv" method="POST">
+                        <div class="container-form">
+                            <label for="name" class="visually-hidden">Name</label>
+                            <input type="text" name="name" id="name" placeholder="Name" required>
+                            <img src="../../img/icon-invalid.svg" alt="" class="contact-invalid-icon" width="24" height="24"/>
+                        </div>
+                        <div class="container-form">
+                            <label for="email" class="visually-hidden">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Email" required>
+                            <img src="../../img/icon-invalid.svg" alt="" class="contact-invalid-icon" width="24" height="24"/>
+                        </div>
+                        <div class="container-form">
+                            <label for="message" class="visually-hidden">Message</label>
+                            <textarea type="text" name="message" id="message" placeholder="Message" required></textarea>
+                            <img src="../../img/icon-invalid.svg" alt="" class="contact-invalid-icon" width="24" height="24"/>
+                        </div>
+                        <!-- your other form fields go here -->
+                        <div class="message-button">
+                            <button type="submit" class="hover underline">Send Message</button>
+                        </div>
+                    </form>
+                    <hr>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <section class="footer">
+            <div class="container">
+                <div class="container-footer">
+                    <!-- nome a sx - menu dx (projects, contatc, blog, social) -->
+                    <div class="container-icon">
+                        <!-- SOCIAL ICONS -->
+                        <div class="social-menu">
+                            <a href="https://github.com/andrezappa" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                            <a href="https://www.linkedin.com/in/andrea-zappa-b823751b2/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+                            <a href="https://www.instagram.com/andre_zappa/" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+                        </div>
+                    </div> 
+                    <p class="hover">© 2023 Andrea Zappa. All Rights Reserved</p>
+                </div>
+            </div>
+       </section>  
+    </footer>
+
+    <!-- SCRIPT js MOBILE MENU -->
+    <script src="../../script/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+.project-title {
+    justify-content: center;
+    margin-block: 1em;
+}
+.project-item {
+    margin-block-end: 1em;
+}
+
+.project-picture {
+    width: 80%;
+    margin: auto;
+}
+
+.project-picture::after {
+    display: none;
+}
+
+/* TABLET & DESKTOP */
+@media (min-width: 37.5em) {
+    .project-title {
+        margin-block: 1.25em;
+    }
+    
+    .project-picture {
+        width: 60%;
+    }
+
+    .project-item {
+        margin-block-end: 1.25em;
+    }
+}
+
+@media (min-width: 62.5em) {
+    .project-title {
+        margin-block: 1.5em;
+    }
+    
+    .project-item {
+        margin-block-end: 1.5em;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    .underline{
+        text-align: center;
+        margin-block: 0.5em
+    }
+}
