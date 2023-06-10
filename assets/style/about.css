@@ -13,10 +13,6 @@ p  a {
     text-decoration-color: var(--accent);
 }
 
-.container {
-    width: calc(100% - 10em);
-}
-
 .container-about > div {
     margin-block: 2em;
 }

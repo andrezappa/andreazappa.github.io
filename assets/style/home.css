@@ -90,9 +90,18 @@
 .skills-item {
     text-align: center;
 }
-
-.skills-description {
+.skills-description{
     color: var(--text2);
+}
+
+.skills-description a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.skills-description, .skills-description a{
+    font-style: italic;
+    font-size: .8em;
 }
 
 /* TABLET 600px*/
@@ -101,6 +110,9 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 3.25em 1.5em;
     }
+    .skills-description, .skills-description a{
+        font-size: 1em;
+    }
 }
 
 /* DESKTOP 1000px*/
@@ -108,6 +120,10 @@
     .container-skills {
         grid-template-columns: repeat(3, 1fr);
         gap: 3.5em 2em;
+    }
+
+    .skills-description, .skills-description a{
+        font-size: 1.3em;
     }
 }
 
