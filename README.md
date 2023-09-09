@@ -9,10 +9,11 @@ In addition, you can find in my website a little presentaion of me, in "About Me
 ## Technologies used
 For create this website I've used different technologies:
 * **Visual Studio Code** as editor for writing code; 
-* **HTML** for realized the page's structure, 
+* **HTML** for realized the page's structure;
+* **CSS** to define the style of the page; 
 * **Font Awesome** for the icons.
 
-At the least I've used **Formspree** for receiving emails.
+At the least I've used **emailJS** for receiving emails.
 ## Open Graph and SEO
 To improve SEO, I finally introduced the Open Graph tag, that is a protocol that allows you to indicate to social networks, such as Facebook, Twitter and Linkedin for example, what information is shown when someone shares a link from your site.
 ## Author
