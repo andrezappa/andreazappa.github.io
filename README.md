@@ -17,6 +17,5 @@ At the least I've used **Formspree** for receiving emails.
 ## Open Graph and SEO
 To improve SEO, I finally introduced the Open Graph tag, that is a protocol that allows you to indicate to social networks, such as Facebook, Twitter and Linkedin for example, what information is shown when someone shares a link from your site.
 ## Author
-Andrea Zappa
-https://andrezappa.github.io/andreazappa.github.io/index.html
+Andrea Zappa 
 [Github](https://github.com/andrezappa) | [Linkedin](https://www.linkedin.com/in/andrea-zappa-b823751b2/)
