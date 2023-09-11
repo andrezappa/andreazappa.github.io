@@ -42,7 +42,7 @@
         </div>
         <!-- MOBILE MENU -->
         <div class="container-mobile-menu">
-            <span id="menu-icon" style="cursor: pointer" onclick="openNav()">&#9776;</span>
+            <span id="menu-icon" onclick="openNav()">&#9776;</span>
             <nav class="container-mobile-nav" id="container-mobile-nav">
                 <ul class="mobile-menu">
                     <a class="closebtn" onclick="closeNav()">&#x2716;</a>
@@ -70,7 +70,12 @@
                         />
                     </picture>
                 </div>
-                <h1 class="hero-headline">Nice to meet you! <br> I'm <span class="underline">Andrea Zappa</span>.</h1>                
+                <!-- HERO TEXT -->
+                <h1 class="hero-headline">Nice to meet you! <br> I'm <span class="underline">Andrea Zappa</span>.</h1>
+            </div>
+                <!-- ABOUT ME TEXT -->
+                <!-- Presentation -->
+            <div class="presentation">
                 <p>
                     I am a 21-year-old web developer based in Siena, Tuscany. <br> I am passionate about creating innovative websites and digital solutions. Through my personal website, I aim to showcase my projects and skills in the field of web development.
                 </p>
@@ -109,23 +114,23 @@
         <section class="contact" id="contact">
             <div class="container">
                 <div class="container-contact">
-                    <h1 id="contact-header">Contact</h1>
+                    <h2 id="contact-header">Contact</h2>
                     <p class="contact-text">I would love to hear about your project and how I could help. Please fill in the form, and I'll get back to you as soon as possible.</p>
                     <form action="https://formspree.io/f/mqkovwqv" method="POST">
                         <div class="container-form">
                             <label for="name" class="visually-hidden">Name</label>
-                            <input type="text" name="name" id="name" placeholder="Name" required>
-                            <img src="../../img/icon-invalid.svg" alt="" class="contact-invalid-icon" width="24" height="24"/>
+                            <input type="text" name="name" id="name" placeholder= "Name" required>
+                            <img src="../../img/icon-invalid.svg" alt="invalid icon" class="contact-invalid-icon" width="24" height="24"/>
                         </div>
                         <div class="container-form">
                             <label for="email" class="visually-hidden">Email</label>
                             <input type="email" name="email" id="email" placeholder="Email" required>
-                            <img src="../../img/icon-invalid.svg" alt="" class="contact-invalid-icon" width="24" height="24"/>
+                            <img src="../../img/icon-invalid.svg" alt="invalid icon" class="contact-invalid-icon" width="24" height="24"/>
                         </div>
                         <div class="container-form">
                             <label for="message" class="visually-hidden">Message</label>
                             <textarea type="text" name="message" id="message" placeholder="Message" required></textarea>
-                            <img src="../../img/icon-invalid.svg" alt="" class="contact-invalid-icon" width="24" height="24"/>
+                            <img src="../../img/icon-invalid.svg" alt="invalid icon" class="contact-invalid-icon" width="24" height="24"/>
                         </div>
                         <!-- your other form fields go here -->
                         <div class="message-button">

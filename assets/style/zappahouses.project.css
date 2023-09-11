@@ -1,9 +1,14 @@
+/* PROJECT SECTION */
+.continer-zappahouses {
+    text-align: center;
+}
 .project-title {
     justify-content: center;
     margin-block: 1em;
 }
+
 .project-item {
-    margin-block-end: 1em;
+    margin-block-end: 3em;
 }
 
 .project-picture {
@@ -13,6 +18,10 @@
 
 .project-picture::after {
     display: none;
+}
+
+.call-to-action {
+    margin-block: 1em;
 }
 
 /* TABLET & DESKTOP */
@@ -43,8 +52,8 @@
         text-align: justify;
     }
 
-    .underline{
-        text-align: center;
+    .title-description-project, .call-to-action > p{
+        text-align: center; 
         margin-block: 0.5em
-    }
+    } 
 }

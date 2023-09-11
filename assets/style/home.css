@@ -1,4 +1,4 @@
-/* HERO */
+/* HERO SECTION*/
 
 .hero-container {
     display: flex;
@@ -40,6 +40,7 @@
     transition: var(--transition);
 }
 
+/* TABLET 600px*/
 @media (min-width: 37.5em) {
     .hero-description {
         margin-block-start: 1.25em;
@@ -58,6 +59,7 @@
     }
 }
 
+/* DESKTOP 1000px*/
 @media (min-width: 62.5em) {
     .hero-description {
         margin-block-start: 1.5em;
@@ -79,7 +81,7 @@
 
 /* ------------------------------------------------------------------ */
 
-/* SKILLS */
+/* SKILLS SECTION */
 
 .container-skills {
     display: grid;
@@ -92,11 +94,6 @@
 }
 .skills-description{
     color: var(--text2);
-}
-
-.skills-description a {
-    color: var(--accent);
-    text-decoration: none;
 }
 
 .skills-description, .skills-description a{
@@ -129,7 +126,7 @@
 
 /* --------------------------------------------------------------------------------------- */
 
-/* PROJECTS */
+/* PROJECTS SECTION*/
 .container-headline {
     display: flex;
     justify-content: space-between;
@@ -169,7 +166,6 @@
     display: flex;
     justify-content: flex-start;
     margin-block: 1.25em;
-    /* overflow: hidden; */
 }
 
 .container-project-link {
@@ -253,6 +249,3 @@
         transition: var(--transition);
     }
 }
-
-/* -------------------------------------------------------------------- */
-

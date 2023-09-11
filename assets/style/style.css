@@ -136,6 +136,11 @@ main {
     color: var(--accent);
 }
 
+.accent {
+    color: var(--accent);
+    text-decoration: none;
+}
+
 .underline {
     text-decoration: underline;
     text-underline-offset: 0.4em;
@@ -256,11 +261,11 @@ a:hover, i:hover, .hover:hover {
     margin-right: 0;
 }
 
-.menu-element > a {
+.menu-element > a{
     position: relative;
 }
 
-.menu-element:not(.first-element) > a::after {
+.menu-element:not(.first-element) > a::after{
     content: '';
     position: absolute;
     left: 50%;
@@ -371,7 +376,6 @@ a:hover, i:hover, .hover:hover {
     font-family: "Space Grotesk", sans-serif;
 }
 
-
 .contact-invalid-icon {
     display: none;
     width: var(--fs-24);
@@ -410,6 +414,10 @@ a:hover, i:hover, .hover:hover {
 
     input, textarea {
         height: 8em;
+    }
+
+    input::placeholder, textarea::placeholder {
+        font-size: var(--fs-24);
     }
 }
 
