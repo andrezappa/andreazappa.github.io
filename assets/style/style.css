@@ -378,8 +378,8 @@ a:hover, i:hover, .hover:hover {
 
 .contact-invalid-icon {
     display: none;
-    width: var(--fs-24);
-    height: var(--fs-24);
+    width: 24px;
+    height: 24px;
     position: absolute;
     top: 50%;
     right: 0;
